@@ -37,19 +37,18 @@ class _GradientContainerState extends State<GradientContainer> {
             end: Alignment.bottomCenter,
           ),
         ),
-        child: Column(children: [
-          Row(
-            children: [
-              Dice(
-                  img:
-                      'C:\GitHub\DiceRoll\assets\images\dice_number_$dice1Number.jpg'),
-              Dice(
-                  img:
-                      'C:\GitHub\DiceRoll\assets\images\dice_number_$dice2Number.jpg'),
-            ],
-          ),
-          TextButton(onPressed: rollDice, child: const Text("Roll Dice"))
-        ]),
+        child: Center(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Dice(img: 'assets/images/dice_number_$dice1Number.png'),
+                Dice(img: 'assets/images/dice_number_$dice2Number.png'),
+              ],
+            ),
+            TextButton(onPressed: rollDice, child: const Text("Roll Dice"))
+          ]),
+        ),
       ),
     );
   }

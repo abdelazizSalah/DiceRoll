@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/GitHub/DiceRoll/dice_roll/';
 
 class Dice extends StatelessWidget {
   final img;
@@ -6,6 +7,6 @@ class Dice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(img, width: 200);
+    return Image.asset('.', width: 200);
   }
 }

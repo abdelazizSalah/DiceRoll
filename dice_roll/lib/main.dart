@@ -15,9 +15,11 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const GradientContainer(
-      startColor: Colors.indigo,
-      endColor: Colors.blue,
+    return const MaterialApp(
+      home: GradientContainer(
+        startColor: Colors.indigo,
+        endColor: Colors.blue,
+      ),
     );
   }
 }
