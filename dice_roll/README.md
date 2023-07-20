@@ -1,6 +1,5 @@
 # dice_roll
-
-A new Flutter project.
+* The purpose of this app is to make a simple application in which we can roll 2 dices to be able to play any dice game. 
 
 ## Getting Started
 
@@ -14,3 +13,10 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+# images
+![First Roll](image.png)
+![SecondRoll](image-1.png)
+![Third Roll](image-2.png)
+![Forth Roll](image-3.png)

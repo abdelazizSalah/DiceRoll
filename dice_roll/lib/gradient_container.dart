@@ -29,6 +29,12 @@ class _GradientContainerState extends State<GradientContainer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Dice Roll"),
+        centerTitle: true,
+        backgroundColor: Colors.amber,
+        elevation: 0,
+      ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -39,14 +45,29 @@ class _GradientContainerState extends State<GradientContainer> {
         ),
         child: Center(
           child: Column(mainAxisSize: MainAxisSize.min, children: [
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Dice(img: 'assets/images/dice_number_$dice1Number.png'),
-                Dice(img: 'assets/images/dice_number_$dice2Number.png'),
-              ],
+            SizedBox(
+              width: 600,
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 60),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Dice(img: './assets/images/dice_number_$dice1Number.jpg'),
+                    Dice(img: './assets/images/dice_number_$dice2Number.jpg'),
+                  ],
+                ),
+              ),
             ),
-            TextButton(onPressed: rollDice, child: const Text("Roll Dice"))
+            TextButton(
+                onPressed: rollDice,
+                child: const Text(
+                  "Roll Dices",
+                  style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 30,
+                  ),
+                ))
           ]),
         ),
       ),
